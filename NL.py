@@ -92,5 +92,4 @@ predict_labels = np.argmax(predict, axis=1)
 original_labels = np.argmax(y_test, axis=1)
 
 for i in range(30):
-    print()
     print("기사제목 : ", test_data['title'].iloc[i], "/\t 원래 라벨 : ", original_labels[i], "/\t예측한 라벨 : ", predict_labels[i])
